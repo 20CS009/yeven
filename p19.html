@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form tags</h1>
+    <form action="" method="" autocomplete="" enctype="">
+        <fieldset>
+            <legend>Login Form</legend>
+
+            <label for="user">Enter Username</label>
+            <input type="text" name="user" id="user" placeholder="enter only a-z" pattern="[A-Za-z@$]+" value="admin" minlength="3" maxlength="10" required  >
+            <br><br>
+
+            <label for="pass">password</label>
+            <input type="text" name="pass" id="pass" required>
+            <br><br>
+
+            <input type="submit" value="Login">
+            <!-- <button type="submit">submit</button> -->
+        </fieldset>
+
+    </form>
+
+   <!-- 
+    form elements
+    fieldset-> draw a line of border around the form
+    legend-> add title to form by breaking fieldset
+    label-> title of input
+    input-> +15 input types
+        text,password,number,email.radio,checkbox,date,datetime,
+        datetime-local,week,month,time,color,search,range,url,file,
+        image,hidden,submit,reset
+    
+    select-> drop down
+    text area-> multiline text
+
+    -->
+    <!-- form attributes
+     action-> action path/server path/server url address
+     method-> get-> while sending data to server(it will be visible)
+              post-> while sending data to server(it hides)
+     autocomplete-> to clear the form history(off)
+                   uses the previous form history(on)
+    enctype-> application/x-www-form-urlencoded -> form data enc type
+              multipart/form-data -> if form includes input type file
+     -->
+
+     <!-- 
+     input attributes
+     type-> type of input
+     name-> field name
+     id-> filled id
+     placeholder-> hint to the user
+     required-> check the input must be filled and validate the type
+     pattern-> regular expression(format of the value)
+     readonly-> disable to write operation of the input(write protect)
+     disabled-> input field is inactive or disabled
+
+     min-> minimum number
+     max-> maximum number
+
+     minlength-> min length of characters
+     maxlength-> max length of characters
+     -->
+    
+</body>
+</html>
